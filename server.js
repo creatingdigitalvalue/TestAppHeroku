@@ -14,8 +14,8 @@ app.use(cors());
 app.use(express.static(path.join(__dirname,'build')))
 
 app.use('/api/ingredients', ingredientRoutes);
-app.use('/api/recipes', recipeRoutes);
-app.use('/api/recipe_ingredient', recipeIngredientRoutes);
+// app.use('/api/recipes', recipeRoutes);
+// app.use('/api/recipe_ingredient', recipeIngredientRoutes);
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
