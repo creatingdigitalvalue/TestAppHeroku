@@ -32,7 +32,7 @@ exports.createIngredient = async (req, res) => {
     // Log the incoming data
     console.log('Incoming data:', req.body);
     
-    const { ingredient_name, ingredient_amount, ingredient_unit_measurement, ingredient_cost, ingredient_supplier, ingredient_article_number } = req.body;
+    const { ingredient_name, ingredient_amount, ingredient_cost, ingredient_supplier, ingredient_article_number } = req.body;
     try {
         let latestNumber = 0;
         
@@ -73,7 +73,6 @@ exports.createIngredient = async (req, res) => {
             ingredient_id: newIngredientId,
             ingredient_name,
             ingredient_amount,
-            ingredient_unit_measurement,
             ingredient_cost,
             ingredient_supplier,
             ingredient_article_number
