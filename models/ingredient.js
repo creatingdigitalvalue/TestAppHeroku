@@ -17,10 +17,6 @@ Ingredient.init({
     type: DataTypes.STRING,
     primaryKey: true
   },
-  ingredient_unit_measurement: {
-    type: DataTypes.STRING,
-    primaryKey: true
-  },
   ingredient_amount: {
     type: DataTypes.STRING,
     primaryKey: true
