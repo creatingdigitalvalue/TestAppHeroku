@@ -21,7 +21,7 @@ RecipeIngredient.init({
 }, {
   sequelize,
   modelName: 'RecipeIngredient',
-  tableName: 'recipes_ingredients', // Make sure to specify the correct table name
+  tableName: 'recipe_ingredients', // Make sure to specify the correct table name
   timestamps: false
 });
 
